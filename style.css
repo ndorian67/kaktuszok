@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+main{
+
+    margin: auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: 
+                        "h h "
+                        "n n"
+                        "as ar"
+                        "f f";
+}
+header{
+    grid-area: h;
+    text-align: center;
+    padding-bottom: 30px;
+    background-color: aqua;
+    color: white;
+    font-size: 20px;
+}
+nav{
+    grid-area: n;
+}
