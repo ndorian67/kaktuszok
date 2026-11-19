@@ -23,4 +23,25 @@ header{
 }
 nav{
     grid-area: n;
+    background-color: rgb(rgb(15, 112, 168),);
+}
+article{
+    grid-area: ar;
+}
+aside{
+    grid-area: as;
+}
+footer{
+    grid-area: f;
+}
+@media screen and (max-width:700px){
+    main{
+        grid-template-columns: 1fr;
+        grid-template-areas: "h"
+                            "n"
+                            "as"
+                            "ar"
+                            "f";
+    }
+    
 }
